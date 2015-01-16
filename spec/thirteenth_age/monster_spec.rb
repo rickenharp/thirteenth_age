@@ -14,4 +14,9 @@ describe ThirteenthAge::Monster do
     monster = ThirteenthAge::Monster.new(level: 5)
     expect(monster.attack_bonus).to eq(10)
   end
+
+  it 'returns the strike_damage' do
+    monster = ThirteenthAge::Monster.new(level: 5)
+    expect(monster.strike_damage).to eq(18)
+  end
 end
