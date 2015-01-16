@@ -24,4 +24,9 @@ describe ThirteenthAge::Monster do
     monster = ThirteenthAge::Monster.new(level: 5)
     expect(monster.hp).to eq(72)
   end
+
+  it 'returns the ac' do
+    monster = ThirteenthAge::Monster.new(level: 5)
+    expect(monster.ac).to eq(21)
+  end
 end

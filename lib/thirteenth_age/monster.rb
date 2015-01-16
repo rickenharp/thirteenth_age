@@ -20,5 +20,9 @@ module ThirteenthAge
     def hp
       HP_PER_LEVEL[level]
     end
+
+    def ac
+      level + 16
+    end
   end
 end
