@@ -1,3 +1,5 @@
+![](https://codeship.com/projects/57421/status?branch=master)
+
 # ThirteenthAge
 
 TODO: Write a gem description
