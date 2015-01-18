@@ -1,40 +1,19 @@
+require_relative 'monster/normal'
+require_relative 'monster/mook'
+
 module ThirteenthAge
-  class Monster
-    STRIKE_DAMAGE_PER_LEVEL = [4,5,7,10,14,18,21,28,38,50,58,70,90,110,135]
-    HP_PER_LEVEL = [20,27,36,45,54,72,90,108,144,180,216,288,360,432,576]
+  module Monster
 
-    attr_accessor :level
+    MONSTER_TYPES = {
+      "normal" => Normal,
+      "mook" => Mook,
+    }
 
-    def initialize(level:)
-      self.level = level
+    def new(level:, type: "normal")
+      klass = MONSTER_TYPES[type]
+      klass.new(level: level)
     end
 
-    def attack_bonus
-      level + 5
-    end
-
-    def strike_damage
-      STRIKE_DAMAGE_PER_LEVEL[level]
-    end
-
-    def hp
-      HP_PER_LEVEL[level]
-    end
-
-    def ac
-      level + 16
-    end
-
-    def better_defense
-      level + 14
-    end
-
-    def lesser_defense
-      level + 10
-    end
-
-    def fear_threshold
-      (hp / 3.0).ceil
-    end
+    module_function(:new)
   end
 end
