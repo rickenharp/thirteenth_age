@@ -32,5 +32,9 @@ module ThirteenthAge
     def lesser_defense
       level + 10
     end
+
+    def fear_threshold
+      (hp / 3.0).ceil
+    end
   end
 end

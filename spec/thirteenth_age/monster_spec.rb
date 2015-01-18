@@ -34,4 +34,8 @@ describe ThirteenthAge::Monster do
   it 'returns the lesser_defense' do
     expect(monster.lesser_defense).to eq(15)
   end
+
+  it 'returns the fear_threshold' do
+    expect(monster.fear_threshold).to eq(24)
+  end
 end
