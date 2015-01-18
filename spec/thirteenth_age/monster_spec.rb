@@ -30,4 +30,8 @@ describe ThirteenthAge::Monster do
   it 'returns the better_defense' do
     expect(monster.better_defense).to eq(19)
   end
+
+  it 'returns the lesser_defense' do
+    expect(monster.lesser_defense).to eq(15)
+  end
 end

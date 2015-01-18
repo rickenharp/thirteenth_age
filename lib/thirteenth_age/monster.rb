@@ -28,5 +28,9 @@ module ThirteenthAge
     def better_defense
       level + 14
     end
+
+    def lesser_defense
+      level + 10
+    end
   end
 end
