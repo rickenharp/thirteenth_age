@@ -24,5 +24,9 @@ module ThirteenthAge
     def ac
       level + 16
     end
+
+    def better_defense
+      level + 14
+    end
   end
 end
