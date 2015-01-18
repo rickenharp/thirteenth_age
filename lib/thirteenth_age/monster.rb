@@ -6,6 +6,7 @@ module ThirteenthAge
 
     MONSTER_TYPES = {
       "normal" => Normal,
+      "mook" => Mook,
     }
 
     def new(level:, type: "normal")
