@@ -1,4 +1,5 @@
 require_relative 'monster/normal'
+require_relative 'monster/mook'
 
 module ThirteenthAge
   module Monster
