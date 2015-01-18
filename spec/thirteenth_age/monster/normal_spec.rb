@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe ThirteenthAge::Monster do
-  let(:monster) { ThirteenthAge::Monster.new(level: 5) }
+describe ThirteenthAge::Monster::Normal do
+  let(:monster) { ThirteenthAge::Monster::Normal.new(level: 5) }
 
   it 'gets instantiated with a level' do
-    expect {ThirteenthAge::Monster.new(level: 1)}.to_not raise_error
+    expect {ThirteenthAge::Monster::Normal.new(level: 1)}.to_not raise_error
   end
 
   it 'has a level accessor' do
