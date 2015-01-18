@@ -1,4 +1,5 @@
 ![](https://codeship.com/projects/99461bb0-7ffc-0132-f27e-321707412590/status?branch=master)
+[![Code Climate](https://codeclimate.com/github/rickenharp/thirteenth_age/badges/gpa.svg)](https://codeclimate.com/github/rickenharp/thirteenth_age)
 
 # ThirteenthAge
 
