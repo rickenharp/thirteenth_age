@@ -3,8 +3,13 @@ require_relative 'monster/normal'
 module ThirteenthAge
   module Monster
 
-    def new(level:)
-      Normal.new(level: level)
+    MONSTER_TYPES = {
+      "normal" => Normal,
+    }
+
+    def new(level:, type: "normal")
+      klass = MONSTER_TYPES[type]
+      klass.new(level: level)
     end
 
     module_function(:new)
