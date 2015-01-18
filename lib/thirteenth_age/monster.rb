@@ -9,7 +9,9 @@ module ThirteenthAge
       "mook" => Mook,
     }
 
-    def new(level:, type: "normal")
+    def new(options = {})
+      type = options[:type] ||"normal"
+      level = options[:level]
       klass = MONSTER_TYPES[type]
       klass.new(level: level)
     end

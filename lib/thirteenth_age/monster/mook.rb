@@ -6,8 +6,8 @@ module ThirteenthAge
 
       attr_accessor :level
 
-      def initialize(level:)
-        self.level = level
+      def initialize(options = {})
+        self.level = options[:level]
       end
 
       def attack_bonus
