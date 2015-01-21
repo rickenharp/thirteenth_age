@@ -1,5 +1,6 @@
 require_relative 'monster/normal'
 require_relative 'monster/mook'
+require_relative 'monster/large'
 
 module ThirteenthAge
   module Monster
@@ -7,6 +8,7 @@ module ThirteenthAge
     MONSTER_TYPES = {
       "normal" => Normal,
       "mook" => Mook,
+      "large" => Large,
     }
 
     def new(options = {})

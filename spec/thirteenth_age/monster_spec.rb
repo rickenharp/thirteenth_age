@@ -10,4 +10,9 @@ describe ThirteenthAge::Monster do
     monster = ThirteenthAge::Monster.new(level: 1, type: "mook")
     expect(monster).to be_a(ThirteenthAge::Monster::Mook)
   end
+
+  it 'returns a Large monster' do
+    monster = ThirteenthAge::Monster.new(level: 1, type: "large")
+    expect(monster).to be_a(ThirteenthAge::Monster::Large)
+  end
 end
