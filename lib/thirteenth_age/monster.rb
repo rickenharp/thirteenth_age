@@ -1,3 +1,4 @@
+require_relative 'monster/base'
 require_relative 'monster/normal'
 require_relative 'monster/mook'
 require_relative 'monster/large'
