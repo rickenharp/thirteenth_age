@@ -1,17 +1,17 @@
 module ThirteenthAge
   module Monster
-    class Large < Base
+    class Huge < Base
 
       def strike_damage_per_level
-        [9,10,14,21,28,36,42,56,76,100,116,140,180,220,270]
+        [12,15,21,30,42,54,63,84,114,150,174,210,270,330,405]
       end
 
       def hp
-        super * 2
+        super * 3
       end
 
       def fear_factor
-        6.0
+        9.0
       end
 
     end

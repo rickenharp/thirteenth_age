@@ -2,6 +2,7 @@ require_relative 'monster/base'
 require_relative 'monster/normal'
 require_relative 'monster/mook'
 require_relative 'monster/large'
+require_relative 'monster/huge'
 
 module ThirteenthAge
   module Monster
@@ -10,6 +11,7 @@ module ThirteenthAge
       "normal" => Normal,
       "mook" => Mook,
       "large" => Large,
+      "huge" => Huge,
     }
 
     def new(options = {})

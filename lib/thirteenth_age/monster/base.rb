@@ -16,6 +16,10 @@ module ThirteenthAge
         strike_damage_per_level[level]
       end
 
+      def hp_per_level
+        [20,27,36,45,54,72,90,108,144,180,216,288,360,432,576]
+      end
+
       def hp
         hp_per_level[level]
       end
