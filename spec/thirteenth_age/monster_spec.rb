@@ -15,4 +15,9 @@ describe ThirteenthAge::Monster do
     monster = ThirteenthAge::Monster.new(level: 1, type: "large")
     expect(monster).to be_a(ThirteenthAge::Monster::Large)
   end
+
+  it 'returns a Huge monster' do
+    monster = ThirteenthAge::Monster.new(level: 1, type: "huge")
+    expect(monster).to be_a(ThirteenthAge::Monster::Huge)
+  end
 end
